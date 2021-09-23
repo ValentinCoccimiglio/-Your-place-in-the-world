@@ -1,0 +1,191 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: 'Klee One', cursive;
+}
+
+/*<————————PRINCIPAL PAG———————>*/
+.movete {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background-color: transparent;
+}
+
+/*<————————logo———————>*/
+.logotype {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+/*<————————image text———————>*/
+.img-principal {
+  position: relative;
+}
+
+.img-principal .img-medidasPrincip {
+  border-radius: 20px;
+}
+
+/*<————————text———————>*/
+.text {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*<————————CONTACTO———————>*/
+/*<————————flexbox———————>*/
+.flex-outer li,
+.flex-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 120px;
+          flex: 1 0 120px;
+  max-width: 220px;
+}
+
+/*<————————form———————>*/
+.flex-outer > li > label + *,
+.flex-inner {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 220px;
+          flex: 1 0 220px;
+}
+
+.tittle {
+  color: black;
+}
+
+.flex-outer li button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.flex-inner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/*<————————IMAGES———————>*/
+/*<————————grids———————>*/
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.row .column {
+  -ms-flex: 25%;
+  /* IE10 */
+  -webkit-box-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.row .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/*<————————locations———————>*/
+.card-title {
+  color: slateblue;
+  font-weight: bold;
+}
+
+.card-text {
+  color: black;
+  font-style: italic;
+}
+
+/*<————————footer———————>*/
+.derechosYLinks {
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    -webkit-box-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    -webkit-box-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

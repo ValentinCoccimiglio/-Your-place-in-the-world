@@ -1,0 +1,119 @@
+*{ margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    }
+    body{background-color: white
+        ;font-family: 'Klee One', cursive;}
+    /*<————————PRINCIPAL PAG———————>*/
+    .movete{
+      position: sticky;
+      top: 0px;
+       background-color: transparent
+    }
+    /*<————————logo———————>*/
+    .logotype {
+        position: relative;
+        text-align: center;
+        color: black;
+        font-size: 35px;
+        font-weight:300;
+      }
+      
+    /*<————————image text———————>*/
+    .img-principal {
+      position: relative;
+        .img-medidasPrincip {
+          border-radius: 20px;
+          
+        }
+    }
+     /*<————————text———————>*/
+    .text {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: transparent;
+      color: black;
+      padding-left: 20px;
+      padding-right: 20px;
+      animation-duration: 15s;
+      animation-name: aparecer;
+      font-size: 35px;
+      font-weight:300 ;
+    }
+    
+    @keyframes aparecer{
+        0% { opacity: 0%;
+        }
+        100% {opacity: 1;
+        }
+    }
+    /*<————————CONTACTO———————>*/
+    /*<————————flexbox———————>*/
+    .flex-outer li,
+    .flex-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    
+    .flex-outer > li > label,
+    .flex-outer li p {
+      flex: 1 0 120px;
+      max-width: 220px;
+    }
+    /*<————————form———————>*/
+    .flex-outer > li > label + *,
+    .flex-inner {
+      flex: 1 0 220px;
+    }
+    .tittle{color: black;}
+    .flex-outer li button {
+      margin-left: auto;
+      padding: 8px 16px;
+      border: none;
+      background: #333;
+      color: #f2f2f2;
+      text-transform: uppercase;
+      letter-spacing: .09em;
+      border-radius: 2px;
+    }
+    .flex-inner li {
+      width: 100px;
+    }
+    .flex-inner {
+      justify-content: space-between;
+    }
+    /*<————————IMAGES———————>*/
+    /*<————————grids———————>*/
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+        .column {
+            -ms-flex: 25%; /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+                .column img {
+             margin-top: 8px;
+              vertical-align: middle;
+           width: 100%;
+        }
+    }
+    /*<————————locations———————>*/
+    .card-title{
+      color: slateblue;
+    font-weight: bold;}
+      .card-text{
+        color: black;
+        font-style: italic;
+      }
+    /*<————————footer———————>*/
+    .derechosYLinks{
+        color: black;
+    }
+    @import "mediaqueris"
