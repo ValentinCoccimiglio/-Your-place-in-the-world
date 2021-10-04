@@ -50,7 +50,6 @@ body {
           animation-duration: 15s;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
-  font-size: 35px;
   font-weight: 300;
 }
 
@@ -182,6 +181,42 @@ body {
 
 @media screen and (max-width: 600px) {
   .column {
+    -ms-flex: 100%;
+    -webkit-box-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .zoom {
+    -ms-flex: 50%;
+    -webkit-box-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .zoom {
+    -ms-flex: 100%;
+    -webkit-box-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    -ms-flex: 50%;
+    -webkit-box-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
     -ms-flex: 100%;
     -webkit-box-flex: 100%;
             flex: 100%;
