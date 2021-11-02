@@ -40,3 +40,17 @@
       max-width: 100%;
     }
   }
+  @media screen and (max-width: 800px) {
+    .flexpadre {
+     flex-direction: column;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .flexpadre {
+     flex-direction: column;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
